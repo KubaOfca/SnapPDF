@@ -1,5 +1,8 @@
 # SStoPDF
 
+## Description
+This program allows you to select an area on screen and makes screenshots of it in order to save it to PDF file. It can be useful to save an presenation from your online lecture.
+
 ## How it works?
 
 * Select a file name of PDF and location where to save
