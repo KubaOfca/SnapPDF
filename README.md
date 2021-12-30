@@ -4,7 +4,7 @@
 
 * Select a file name of PDF and location where to save
 * Select an area of screen capture
-* Hit Make an SS button to make screenshot of selected area
+* Hit Make screenshot button to make screenshot of selected area
 * Save screenshots to PDF file by clik End Session button
 
 
