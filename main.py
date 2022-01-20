@@ -231,7 +231,7 @@ class FunctionWidnow(tk.Frame):
         image = ImageGrab.grab(
             bbox=(self.master.selected_box[0], self.master.selected_box[1],
                   self.master.selected_box[2], self.master.selected_box[3]))
-        image.save(r'{}/{}.png'.format(self.master.folder_name, self.ctr))
+        image.save(f'{self.master.folder_name}/{self.ctr:08d}.png')
         self.ctr = self.ctr + 1
         self.ctr_label.config(text="{}".format(self.ctr))
 
@@ -241,7 +241,9 @@ class FunctionWidnow(tk.Frame):
             return
         if self.ctr > 0:
             img_list = []
+            print()
             for file_name in glob.glob("{}/*.png".format(self.master.folder_name)):
+                print(file_name)
                 im = Image.open(file_name)
                 img_list.append(im.convert('RGB'))
 
