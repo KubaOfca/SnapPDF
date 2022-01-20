@@ -231,7 +231,7 @@ class FunctionWidnow(tk.Frame):
         image = ImageGrab.grab(
             bbox=(self.master.selected_box[0], self.master.selected_box[1],
                   self.master.selected_box[2], self.master.selected_box[3]))
-        image.save(f'{self.master.folder_name}/{self.ctr:08d}.png')
+        image.save(f'{self.master.folder_name}/{self.ctr:08d}.png') # fix
         self.ctr = self.ctr + 1
         self.ctr_label.config(text="{}".format(self.ctr))
 
